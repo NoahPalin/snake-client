@@ -10,6 +10,14 @@ const connect = function () {
   conn.on("data", () => {
     console.log("you ded cuz you idled");
   });
+  
+  conn.on("connect", () => {
+    console.log("Successfully connected to game server!");
+  });
+
+  conn.on("connect", () => {
+    console.log("Name: TBS ");
+  });
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
