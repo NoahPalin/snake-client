@@ -3,7 +3,6 @@
 let connection;
 
 const setupInput = function (conn) {
-  console.log(conn);
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -29,6 +28,15 @@ const handleUserInput = function (data) {
       break;
     case 'd':
       connection.write("Move: right");
+      break;
+    case '1':
+      connection.write("Say: nerd");
+      break;
+    case '2':
+      connection.write("Say: GGEZ");
+      break;
+    case '3':
+      connection.write("Say: yum");
       break;
   }
 };
