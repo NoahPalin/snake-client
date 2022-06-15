@@ -43,10 +43,10 @@ const handleUserInput = function(data) {
 
   // The following cases are for sending canned messages to the server.
   case '1':
-    connection.write("Say: Nerd");
+    connection.write("Say: Hi");
     break;
   case '2':
-    connection.write("Say: GGEZ");
+    connection.write("Say: GG");
     break;
   case '3':
     connection.write("Say: Yum");
