@@ -17,6 +17,10 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Successfully connected to game server!");
     conn.write("Name: TBS");
+
+    // Tells the user which keys to use to talk to the other players in the game.
+    console.log("\nInput numbers 1-5 to speak to the other players!");
+    console.log("1: Nerd\n2: GGEZ\n3: Yum\n4: Bye\n5: LOL");
   });
 
   // Interpret incoming data as text.
