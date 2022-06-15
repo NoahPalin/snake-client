@@ -1,11 +1,11 @@
 const net = require("net");
 const {ip, port} = require('./constants');
 
-// establishes a connection with the game server
-const connect = function () {
+// Establishes a connection with the game server.
+const connect = function() {
   const conn = net.createConnection({
-    host: ip,// IP address here,
-    port: port// PORT number here,
+    host: ip,
+    port: port
   });
 
   // Logs data sent by the server to the user.
@@ -13,19 +13,16 @@ const connect = function () {
     console.log(data);
   });
   
-  // Displays the snake name.
+  // Tells the user the connected to the server and displays the name of the snake.
   conn.on("connect", () => {
     console.log("Successfully connected to game server!");
     conn.write("Name: TBS");
-
-    // The following line moves the snake up.
-    //conn.write("Move up");
   });
 
-
-  // interpret incoming data as text
+  // Interpret incoming data as text.
   conn.setEncoding("utf8");
 
+  // Returning the conn object to allow for communication with the server in other parts of the program.
   return conn;
 };
 
