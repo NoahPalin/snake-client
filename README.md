@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![text](https://github.com/NoahPalin/snake-client/tree/master/images/image1.png)
-![text](https://github.com/NoahPalin/snake-client/tree/master/images/image2.png)
+![text](https://github.com/NoahPalin/snake-client/blob/master/images/image1.png)
+![text](https://github.com/NoahPalin/snake-client/blob/master/images/image2.png)
 
 
 ## Getting Started
